@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Nitasema Foundation's impactful work through our gallery. Witness our education, healthcare, and community initiatives transforming children's lives in Kenya.">
+    <meta name="keywords" content="Nitasema Foundation gallery, Kenya charity photos, children education Kenya, healthcare initiatives, community outreach Kenya, NGO impact photos">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Nitasema Foundation">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Gallery | Nitasema Foundation">
+    <meta property="og:description" content="View our impactful work empowering children in Kenya through education, healthcare, and community initiatives">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca">
+    <meta property="og:url" content="https://nitasemafoundation.org/gallery.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gallery | Nitasema Foundation">
+    <meta name="twitter:description" content="Visual journey of our work empowering Kenyan children through education and healthcare">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Nitasema Foundation Impact Gallery",
+      "description": "Collection of images showcasing our education, healthcare and community initiatives in Kenya",
+      "publisher": {
+        "@type": "NGO",
+        "name": "Nitasema Foundation",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nitasemafoundation.org/logo.png"
+        }
+      },
+      "image": [
+        "https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6",
+        "https://images.unsplash.com/photo-1576669801823-6d0d9d3d3c8f",
+        "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9"
+      ]
+    }
+    </script>
+    
+    <title>Gallery | Nitasema Foundation - Empowering Children in Kenya</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --blue: #3498db;
+            --pink: #e91e63;
+            --purple: #9b59b6;
+            --white: #ffffff;
+            --light-bg: #f9f9f9;
+            --dark-text: #333333;
+            --gray: #777777;
+            --light-gray: #eeeeee;
+            --transition: all 0.4s ease;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+            background-color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+            position: relative;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Skip to Content Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px;
+            z-index: 10000;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        /* Logo text styling */
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            
+            background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Full logo text for desktop */
+        .logo-full {
+            display: block;
+			font-size: 1.8rem;
+        }
+        
+        /* Short logo text for mobile */
+        .logo-short {
+            display: none;
+			font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--blue);
+        }
+
+        .nav-btn {
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            color: var(--white);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--blue);
+            z-index: 1001;
+        }
+
+        /* Gallery Hero Section */
+        .gallery-hero {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('logo.png') center/cover no-repeat;
+            margin-top: 80px;
+        }
+
+        .gallery-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(52, 152, 219, 0.1) 0%, transparent 70%);
+            z-index: 0;
+            animation: rotate 30s linear infinite;
+        }
+
+        .gallery-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .gallery-hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: var(--white);
+        }
+
+        .gallery-hero p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* Category Section */
+        .category-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            color: var(--gray);
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .grid-item {
+            position: relative;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .grid-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .grid-item:hover .grid-img {
+            transform: scale(1.05);
+        }
+        
+        /* View More Button */
+        .view-more-btn {
+            display: block;
+            margin: 0 auto;
+            padding: 12px 30px;
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            color: var(--white);
+            border: none;
+            border-radius: 30px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            font-size: 1rem;
+            text-align: center;
+            max-width: 200px;
+        }
+        
+        .view-more-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            width: 100%;
+            max-width: 1200px;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2.5rem;
+            color: var(--white);
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 2001;
+        }
+        
+        .modal-close:hover {
+            color: var(--pink);
+            transform: scale(1.1);
+        }
+        
+        .modal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        
+        .modal-item {
+            height: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .modal-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            color: var(--white);
+            padding: 70px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-col h4 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--white);
+        }
+        
+        .footer-col p {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--white);
+            color: var(--blue);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--purple), var(--blue));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -320px;
+            width: 300px;
+            height: 100%;
+            background: linear-gradient(135deg, #5c2d91, #2c6fd1);
+            z-index: 1000;
+            transition: all 0.4s ease;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            padding: 100px 30px 30px;
+            text-align: center;
+            overflow-y: auto;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu .nav-links {
+            display:flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 15px;
+        }
+        
+        .mobile-menu .nav-links li {
+            margin: 0;
+        }
+        
+        .mobile-menu .nav-links a {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .mobile-menu .nav-links a i {
+            margin-right: 10px;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .mobile-menu .nav-btn {
+            margin-top: 30px;
+            width: 100%;
+            font-size: 1rem; /* Reduced font size */
+            padding: 12px 0; /* Reduced padding */
+            background: white;
+            color: #5c2d91;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600; /* Adjusted weight */
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .mobile-menu .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .mobile-menu-close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1001;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu-close:hover {
+            transform: rotate(90deg);
+        }
+        
+        .mobile-menu-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .mobile-menu-header .logo {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .mobile-menu-footer {
+            margin-top: auto;
+            padding-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .gallery-hero h1 {
+                font-size: 3rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .gallery-hero {
+                height: 40vh;
+                margin-top: 70px; /* Added space below header */
+                padding-top: 30px; /* Added padding at top */
+            }
+            
+            .gallery-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .logo-full {
+                display: none;
+            }
+            
+            .logo-short {
+                display: block;
+            }
+            
+            .image-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto 30px;
+            }
+            
+            /* Center all content on mobile */
+            .container, .section-title, .category-section {
+                text-align: center;
+            }
+            
+            .view-more-btn {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .gallery-hero {
+                height: 35vh;
+            }
+            
+            .gallery-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .gallery-hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .modal-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .mobile-menu .nav-btn {
+                padding: 10px 0; /* Further reduced padding */
+                font-size: 0.1rem; /* Further reduced font size */
+            }
+        }
+		@media (max-width: 400px) {
+            .mobile-menu .nav-btn {
+                padding: 1px 0; /* Further reduced padding */
+                font-size: 0.1rem; /* Further reduced font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Nitasema Foundation Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-full">NITASEMA FOUNDATION</span>
+                    <span class="logo-short">NITASEMA FOUNDATION</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+           
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <img src="logo.png" alt="Nitasema Foundation Logo" class="logo-img">
+                <div class="logo-text" style="font-size: 1.5rem;">NITASEMA</div>
+            </div>
+            <p style="color: white; margin-top: 10px; text-shadow: 0 1px 2px rgba(0,0,0,0.4);">Empowering Children in Kenya</p>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="contacts.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <a href="contacts.html" class="nav-btn">Donate Now</a>
+        
+        <div class="mobile-menu-footer">
+            <div class="social-links" style="justify-content: center;">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem; margin-top: 15px; text-shadow: 0 1px 2px rgba(0,0,0,0.4);">© 2025 Nitasema Foundation</p>
+        </div>
+    </div>
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero" id="main-content">
+        <div class="gallery-hero-content">
+            <h1>Our Impact Gallery</h1>
+            <p>Witness the transformative journey of children in Kenya through our initiatives</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="category-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education Programs</h2>
+                <p>Transforming lives through quality education initiatives</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="School children learning at Nitasema Foundation school" class="grid-img">
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Classroom activities at our education center" class="grid-img">
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Children receiving educational materials" class="grid-img">
+                </div>
+            </div>
+            
+            <button class="view-more-btn" data-category="education">View More</button>
+        </div>
+    </section>
+
+    <!-- Healthcare Section -->
+    <section class="category-section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Healthcare Initiatives</h2>
+                <p>Bringing essential medical services to children in need</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Medical camp organized by Nitasema Foundation" class="grid-img">
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1576669801823-6d0d9d3d3c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Doctor examining a child at our clinic" class="grid-img">
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Child vaccination program in Kenya" class="grid-img">
+                </div>
+            </div>
+            
+            <button class="view-more-btn" data-category="healthcare">View More</button>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="category-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Community Outreach</h2>
+                <p>Engaging communities to create sustainable solutions</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Community meeting in rural Kenya" class="grid-img">
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Water project installation" class="grid-img">
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1545239705-1564e58b9e4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Community garden project" class="grid-img">
+                </div>
+            </div>
+            
+            <button class="view-more-btn" data-category="community">View More</button>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="category-section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Events & Activities</h2>
+                <p>Celebrating milestones and community engagement</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Annual charity fundraising event" class="grid-img">
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Volunteer training session" class="grid-img">
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Community celebration event" class="grid-img">
+                </div>
+            </div>
+            
+            <button class="view-more-btn" data-category="events">View More</button>
+        </div>
+    </section>
+
+    <!-- Modal for Gallery -->
+    <div class="modal" id="galleryModal">
+        <div class="modal-close" id="modalClose">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="modal-content">
+            <div class="modal-grid" id="modalGrid">
+                <!-- Images will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="logo.png" alt="Nitasema Foundation Logo" class="logo-img">
+                        <div class="logo-text" style="font-size: 1.8rem;">NITASEMA</div>
+                    </div>
+                    <p>Creating sustainable change through community-driven initiatives for children in Kenya.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 700 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@nitasemafoundation.org</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Nitasema Foundation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Event Listeners
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Gallery Modal Functionality
+        const viewMoreButtons = document.querySelectorAll('.view-more-btn');
+        const galleryModal = document.getElementById('galleryModal');
+        const modalGrid = document.getElementById('modalGrid');
+        const modalClose = document.getElementById('modalClose');
+        
+        // Image data for each category
+        const galleryImages = {
+            education: [
+                "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1545239705-1564e58b9e4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            ],
+            healthcare: [
+                "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1576669801823-6d0d9d3d3c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            ],
+            community: [
+                "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1545239705-1564e58b9e4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1576669801823-6d0d9d3d3c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            ],
+            events: [
+                "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1545239705-1564e58b9e4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            ]
+        };
+        
+        // Open modal with images for specific category
+        function openModal(category) {
+            // Clear previous images
+            modalGrid.innerHTML = '';
+            
+            // Add images for selected category
+            galleryImages[category].forEach(imgSrc => {
+                const item = document.createElement('div');
+                item.className = 'modal-item';
+                item.innerHTML = `<img src="${imgSrc}" alt="Nitasema Foundation ${category} image" class="modal-img">`;
+                modalGrid.appendChild(item);
+            });
+            
+            // Show modal
+            galleryModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Close modal
+        function closeModal() {
+            galleryModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Add event listeners to view more buttons
+        viewMoreButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.category;
+                openModal(category);
+            });
+        });
+        
+        // Close modal when clicking close button or outside content
+        modalClose.addEventListener('click', closeModal);
+        galleryModal.addEventListener('click', (e) => {
+            if (e.target === galleryModal) {
+                closeModal();
+            }
+        });
+        
+        // Close modal with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && galleryModal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+        
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.padding = '10px 0';
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                nav.style.padding = '20px 0';
+                nav.style.background = 'rgba(255, 255, 255, 0.9)';
+                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize animations
+        function initAnimations() {
+            const items = document.querySelectorAll('.grid-item, .section-title');
+            items.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 200 + (index * 100));
+            });
+        }
+        
+        // Initialize on load
+        window.addEventListener('load', initAnimations);
+    </script>
+</body>
+</html>

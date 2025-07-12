@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest news from Nitasema Foundation - Updates on our education, healthcare, and community initiatives in Kenya">
+    <meta name="keywords" content="Nitasema news, Kenya charity updates, children education Kenya, healthcare initiatives, community outreach Kenya, NGO news Kenya">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Nitasema Foundation">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="News | Nitasema Foundation">
+    <meta property="og:description" content="Stay updated with our latest projects and initiatives empowering children in Kenya">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca">
+    <meta property="og:url" content="https://nitasemafoundation.org/news.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News | Nitasema Foundation">
+    <meta name="twitter:description" content="Latest updates on our work empowering Kenyan children">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Nitasema Foundation News Updates",
+      "description": "Latest news and updates on our initiatives in Kenya",
+      "publisher": {
+        "@type": "NGO",
+        "name": "Nitasema Foundation",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nitasemafoundation.org/logo.png"
+        }
+      },
+      "image": [
+        "https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6",
+        "https://images.unsplash.com/photo-1576669801823-6d0d9d3d3c8f",
+        "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9"
+      ]
+    }
+    </script>
+    
+    <title>News | Nitasema Foundation - Empowering Children in Kenya</title>
+	 <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --blue: #3498db;
+            --pink: #e91e63;
+            --purple: #9b59b6;
+            --white: #ffffff;
+            --light-bg: #f9f9f9;
+            --dark-text: #333333;
+            --gray: #777777;
+            --light-gray: #eeeeee;
+            --transition: all 0.4s ease;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+            background-color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+            position: relative;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Skip to Content Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px;
+            z-index: 10000;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        /* Logo text styling */
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+           
+            background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Full logo text for desktop */
+        .logo-full {
+            display: block;
+			font-size: 1.8rem;
+        }
+        
+        /* Short logo text for mobile */
+        .logo-short {
+		 font-size: 1.2rem;
+            display: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+            font-size: 1rem;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--blue);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--blue);
+            z-index: 1001;
+        }
+
+        /* News Hero Section */
+        .news-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('logo.png') center/cover no-repeat;
+            margin-top: 80px;
+        }
+
+        .news-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(52, 152, 219, 0.1) 0%, transparent 70%);
+            z-index: 0;
+            animation: rotate 30s linear infinite;
+        }
+
+        .news-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .news-hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: var(--white);
+        }
+
+        .news-hero p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* Donate Button after Hero */
+        .hero-donate {
+            text-align: center;
+            padding: 40px 0;
+            background: var(--light-bg);
+        }
+        
+        .donate-btn {
+            display: inline-block;
+            padding: 16px 45px;
+            background: linear-gradient(90deg, var(--pink), var(--purple));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: 0 5px 20px rgba(233, 30, 99, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .donate-btn span {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .donate-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--purple), var(--pink));
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .donate-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(233, 30, 99, 0.4);
+        }
+        
+        .donate-btn:hover::before {
+            opacity: 1;
+        }
+
+        /* News Section */
+        .news-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            color: var(--gray);
+        }
+
+        /* News Cards with Alternating Layout */
+        .news-container {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+        
+        .news-card {
+            display: flex;
+            align-items: center;
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .news-image {
+            flex: 1;
+            min-height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .news-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .news-card:hover .news-img {
+            transform: scale(1.05);
+        }
+        
+        .news-date {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .news-content {
+            flex: 1;
+            padding: 40px;
+        }
+        
+        .news-category {
+            display: inline-block;
+            background: var(--light-gray);
+            color: var(--blue);
+            padding: 6px 15px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .news-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .news-excerpt {
+            color: var(--gray);
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+        
+        .news-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .news-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        /* Alternate layout for every other card */
+        .news-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            color: var(--white);
+            padding: 70px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-col h4 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--white);
+        }
+        
+        .footer-col p {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--white);
+            color: var(--blue);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--purple), var(--blue));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -320px;
+            width: 300px;
+            height: 100%;
+            background: linear-gradient(135deg, #5c2d91, #2c6fd1);
+            z-index: 1000;
+            transition: all 0.4s ease;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            padding: 100px 30px 30px;
+            text-align: center;
+            overflow-y: auto;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu .nav-links {
+            display:flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 15px;
+        }
+        
+        .mobile-menu .nav-links li {
+            margin: 0;
+        }
+        
+        .mobile-menu .nav-links a {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .mobile-menu .nav-links a i {
+            margin-right: 10px;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .mobile-menu .donate-btn {
+            margin-top: 30px;
+            width: 100%;
+            font-size: 1rem;
+            padding: 12px 0;
+            background: white;
+            color: #5c2d91;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .mobile-menu .donate-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .mobile-menu-close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1001;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu-close:hover {
+            transform: rotate(90deg);
+        }
+        
+        .mobile-menu-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .mobile-menu-header .logo {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .mobile-menu-footer {
+            margin-top: auto;
+            padding-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .news-hero h1 {
+                font-size: 3rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .news-card {
+                flex-direction: column;
+            }
+            
+            .news-card:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .news-image {
+                min-height: 350px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .news-hero {
+                height: 50vh;
+                margin-top: 70px;
+                padding-top: 30px;
+            }
+            
+            .news-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .logo-full {
+                display: none;
+            }
+            
+            .logo-short {
+                display: block;
+            }
+            
+            /* Center all content on mobile */
+            .container, .section-title, .news-section {
+                text-align: center;
+            }
+            
+            .news-content {
+                padding: 30px 20px;
+            }
+            
+            .news-title {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .news-hero {
+                height: 45vh;
+            }
+            
+            .news-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .news-hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .news-image {
+                min-height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Nitasema Foundation Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-full">NITASEMA FOUNDATION</span>
+                    <span class="logo-short">NITASEMA FOUNDATION</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <img src="logo.png" alt="Nitasema Foundation Logo" class="logo-img">
+                <div class="logo-text" style="font-size: 1.5rem;">NITASEMA</div>
+            </div>
+            <p style="color: white; margin-top: 10px; text-shadow: 0 1px 2px rgba(0,0,0,0.4);">Empowering Children in Kenya</p>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+            <li><a href="contacts.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <button class="donate-btn">Donate Now</button>
+        
+        <div class="mobile-menu-footer">
+            <div class="social-links" style="justify-content: center;">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem; margin-top: 15px; text-shadow: 0 1px 2px rgba(0,0,0,0.4);">© 2025 Nitasema Foundation</p>
+        </div>
+    </div>
+
+    <!-- News Hero -->
+    <section class="news-hero" id="main-content">
+        <div class="news-hero-content">
+            <h1>Latest News & Updates</h1>
+            <p>Stay informed about our initiatives and their impact on children's lives in Kenya</p>
+        </div>
+    </section>
+
+    <!-- Donate Button Section -->
+    <section class="hero-donate">
+        <a href="contacts.html" class="donate-btn">
+            <span>Support Our Cause</span>
+        </a>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Latest Stories</h2>
+                <p>Discover the impact of our work through these inspiring stories</p>
+            </div>
+            
+            <!-- News Container -->
+            <div class="news-container">
+                <!-- News Card 1 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">June 15, 2025</span>
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="New school opening" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Education</span>
+                        <h3 class="news-title">New Primary School Opens in Rural Kenya</h3>
+                        <p class="news-excerpt">We're proud to announce the opening of our newest primary school in the Kajiado region. The school features 6 classrooms, a library, and modern sanitation facilities. This initiative will provide education to over 200 children who previously had to walk 10km to the nearest school.</p>
+                        <a href="#" class="news-btn">Read Full Story</a>
+                    </div>
+                </div>
+                
+                <!-- News Card 2 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">May 28, 2025</span>
+                        <img src="https://images.unsplash.com/photo-1576669801823-6d0d9d3d3c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Medical camp" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Healthcare</span>
+                        <h3 class="news-title">Mobile Medical Clinic Serves Remote Communities</h3>
+                        <p class="news-excerpt">Our mobile medical unit recently completed a two-week tour of remote villages in Turkana County, providing essential healthcare services to over 500 children and their families. The team administered vaccines, treated common illnesses, and provided nutrition education to combat malnutrition in the region.</p>
+                        <a href="#" class="news-btn">Read Full Story</a>
+                    </div>
+                </div>
+                
+                <!-- News Card 3 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">May 10, 2025</span>
+                        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Water project" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Community</span>
+                        <h3 class="news-title">Clean Water Project Reaches 10,000 Beneficiaries</h3>
+                        <p class="news-excerpt">Our community water initiative has now provided clean drinking water to over 10,000 residents across 5 villages. The project includes boreholes, water purification systems, and hygiene education. Access to clean water has reduced waterborne diseases by 75% in participating communities.</p>
+                        <a href="#" class="news-btn">Read Full Story</a>
+                    </div>
+                </div>
+                
+                <!-- News Card 4 -->
+                <div class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">April 22, 2025</span>
+                        <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Volunteers" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Events</span>
+                        <h3 class="news-title">Annual Volunteer Appreciation Event Celebrates Dedication</h3>
+                        <p class="news-excerpt">We celebrated our incredible volunteers at our annual appreciation event in Nairobi. Over 120 volunteers were recognized for their contributions, with special awards given to those with more than 5 years of service. The event highlighted how volunteer efforts have directly impacted over 5,000 children across Kenya.</p>
+                        <a href="#" class="news-btn">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="logo.png" alt="Nitasema Foundation Logo" class="logo-img">
+                        <div class="logo-text" style="font-size: 1.8rem;">NITASEMA</div>
+                    </div>
+                    <p>Creating sustainable change through community-driven initiatives for children in Kenya.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 700 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@nitasemafoundation.org</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Nitasema Foundation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Event Listeners
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.padding = '10px 0';
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                nav.style.padding = '20px 0';
+                nav.style.background = 'rgba(255, 255, 255, 0.9)';
+                nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize animations
+        function initAnimations() {
+            const cards = document.querySelectorAll('.news-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 200 + (index * 200));
+            });
+        }
+        
+        // Initialize on load
+        window.addEventListener('load', initAnimations);
+    </script>
+</body>
+</html>
