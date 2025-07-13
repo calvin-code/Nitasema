@@ -25,22 +25,34 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ImageGallery",
-      "name": "Nitasema Foundation Impact Gallery",
-      "description": "Collection of images showcasing our education, healthcare and community initiatives in Kenya",
-      "publisher": {
-        "@type": "NGO",
-        "name": "Nitasema Foundation",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://nitasemafoundation.org/logo.png"
-        }
+      "@type": "NGO",
+      "name": "Nitasema Foundation",
+      "url": "https://nitasemafoundation.org",
+      "logo": "logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+254-704-704-142",
+        "contactType": "Customer service",
+        "email": "nitasemafoundationorg@gmail.com",
+        "areaServed": "KE",
+        "availableLanguage": ["English","Swahili"]
       },
-      "image": [
-        "assets/education/education1.jpg",
-        "assets/healthcare/healthcare1.jpg",
-        "assets/community/community1.jpg",
-        "assets/events/events1.jpg"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "P.O. Box 66",
+        "addressLocality": "Nzeeka",
+        "addressRegion": "Nzeeka",
+        "postalCode": "90136",
+        "addressCountry": "KE"
+      },
+      "description": "Empowering children in Kenya through education, healthcare, and emotional support",
+      "foundingDate": "2010",
+      "keywords": "Kenya, children, education, healthcare, charity, NGO, Nitasema, Foundation, Makueni, Machinery, Kibwezi, Organization",
+      "image": "logo.png",
+      "sameAs": [
+        "https://www.facebook.com/NitasemaFoundation",
+        "https://twitter.com/NitasemaFdn",
+        "https://www.instagram.com/NitasemaFoundation"
       ]
     }
     </script>
@@ -376,6 +388,110 @@
             box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
         }
 
+        /* New Video Section Styles */
+        .video-section {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .video-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            cursor: pointer;
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            aspect-ratio: 16/9;
+        }
+
+        .video-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+            transition: var(--transition);
+        }
+
+        .video-item:hover .video-thumbnail {
+            opacity: 0.95;
+            transform: scale(1.05);
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .video-item:hover .video-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .play-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            transition: var(--transition);
+            backdrop-filter: blur(5px);
+        }
+
+        .video-item:hover .play-icon {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .play-icon i {
+            color: white;
+            font-size: 30px;
+            margin-left: 5px;
+        }
+
+        .video-title {
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 0 15px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-duration {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
         /* Footer */
         .footer {
             background: linear-gradient(135deg, var(--blue), var(--purple));
@@ -658,7 +774,7 @@
                 font-size: 2.2rem;
             }
             
-            .image-grid {
+            .image-grid, .video-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -691,7 +807,7 @@
                 font-size: 1.3rem;
             }
             
-            .image-grid {
+            .image-grid, .video-grid {
                 grid-template-columns: 1fr;
                 max-width: 500px;
                 margin: 0 auto 30px;
@@ -840,6 +956,88 @@
             opacity: 1;
             transform: rotate(90deg);
         }
+        
+        /* Video Modal */
+        .video-modal .modal-dialog {
+            max-width: 800px;
+        }
+        
+        .video-modal .modal-content {
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+        
+        .video-modal .modal-header {
+            background: rgba(0,0,0,0.8);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .video-modal .modal-title {
+            color: white;
+        }
+        
+        .video-player-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #000;
+        }
+        
+        .video-player {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background: rgba(0,0,0,0.7);
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .video-list-item {
+            cursor: pointer;
+            transition: var(--transition);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .video-list-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-list-thumb {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .video-list-item:hover .video-list-thumb {
+            opacity: 1;
+        }
+        
+        .video-list-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 8px;
+            font-size: 0.8rem;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -866,7 +1064,7 @@
                 <li><a href="news.html">News</a></li>
                 <li><a href="contacts.html">Contact</a></li>
             </ul>
-           
+            
 
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
@@ -1008,6 +1206,56 @@
             </div>
             
             <button class="view-more-btn" data-bs-toggle="modal" data-bs-target="#eventsModal">View More</button>
+        </div>
+    </section>
+
+    <!-- New Impact Videos Section -->
+    <section class="video-section" id="videos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Impact Videos</h2>
+                <p>Watch stories of transformation and hope from our programs in Kenya</p>
+            </div>
+            
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="assets/videos/video3.mp4" data-video-title="Education">
+                    <img src="assets/education/education4.jpg" alt="Education" class="video-thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3 class="video-title">Education Transformation in Makueni</h3>
+                    </div>
+                    <!-- <div class="video-duration">4:32</div> -->
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="assets/videos/video1.mp4" data-video-title="Healthcare">
+                    <img src="assets/healthcare/healthcare5.jpg" alt="Healthcare" class="video-thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3 class="video-title">Healthcare Outreach </h3>
+                    </div>
+                    
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="video-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="assets/videos/video2.mp4" data-video-title="Community">
+                    <img src="assets/community/community22.jpg" alt="Community Development Success Stories" class="video-thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3 class="video-title">Community Development Success Stories</h3>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- <button class="view-more-btn" data-bs-toggle="modal" data-bs-target="#videosModal">View All Videos</button> -->
         </div>
     </section>
 
@@ -1387,6 +1635,93 @@
             </div>
         </div>
     </div>
+    
+    <!-- Video Player Modal -->
+    <div class="modal fade video-modal" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Impact Video</h5>
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="video-player-container">
+                        <iframe class="video-player" id="videoPlayer" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Videos Gallery Modal -->
+   <!-- <div class="modal fade video-modal" id="videosModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Our Impact Videos</h5>
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="video-list">
+                        <!-- Video 1 -
+                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Education Transformation in Makueni">
+                            <img src="https://images.unsplash.com/photo-1524178239882-9c75c8a0f083?q=80&w=1000" alt="Education Transformation in Makueni" class="video-list-thumb">
+                            <h6 class="video-list-title">Education Transformation in Makueni</h6>
+                        </div>
+                        
+                        <!-- Video 2 -
+                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Healthcare Outreach in Kibwezi">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000" alt="Healthcare Outreach in Kibwezi" class="video-list-thumb">
+                            <h6 class="video-list-title">Healthcare Outreach in Kibwezi</h6>
+                        </div>
+                        
+                        <!-- Video 3 -
+                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Community Development Success Stories">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1000" alt="Community Development Success Stories" class="video-list-thumb">
+                            <h6 class="video-list-title">Community Development Success Stories</h6>
+                        </div>
+                        
+                        <!-- Video 4 -
+                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Student Scholarship Program 2024">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1000" alt="Student Scholarship Program 2024" class="video-list-thumb">
+                            <h6 class="video-list-title">Student Scholarship Program 2024</h6>
+                        </div>
+                        
+                        <!-- Video 5 -
+                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Clean Water Project Launch">
+                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000" alt="Clean Water Project Launch" class="video-list-thumb">
+                            <h6 class="video-list-title">Clean Water Project Launch</h6>
+                        </div>
+                        
+                        <!-- Video 6 -
+                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Annual Charity Gala Highlights">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000" alt="Annual Charity Gala Highlights" class="video-list-thumb">
+                            <h6 class="video-list-title">Annual Charity Gala Highlights</h6>
+                        </div>
+                        
+                        <!-- Video 7 -
+                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Volunteer Stories: Making a Difference">
+                            <img src="https://images.unsplash.com/photo-1522071901873-411886a10004?q=80&w=1000" alt="Volunteer Stories: Making a Difference" class="video-list-thumb">
+                            <h6 class="video-list-title">Volunteer Stories: Making a Difference</h6>
+                        </div>
+                        
+                        <!-- Video 8 -
+                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Nutrition Program for Children">
+                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1000" alt="Nutrition Program for Children" class="video-list-thumb">
+                            <h6 class="video-list-title">Nutrition Program for Children</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
     <!-- Footer -->
     <footer class="footer" id="contact">
@@ -1399,17 +1734,17 @@
                     </div>
                     <p>Creating sustainable change through community-driven initiatives for children in Kenya.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/NitasemaFoundation"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/NitasemaFdn"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/NitasemaFoundation"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
-                    <p><i class="fas fa-phone"></i> +254 700 123 456</p>
-                    <p><i class="fas fa-envelope"></i> info@nitasemafoundation.org</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Makueni, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 783 570 177 / +254 704 704 142</p>
+                    <p><i class="fas fa-envelope"></i> nitasemafoundationorg@gmail.com</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
@@ -1512,7 +1847,7 @@
         
         // Initialize animations
         function initAnimations() {
-            const items = document.querySelectorAll('.grid-item, .section-title');
+            const items = document.querySelectorAll('.grid-item, .section-title, .video-item');
             items.forEach((item, index) => {
                 item.style.opacity = '0';
                 item.style.transform = 'translateY(30px)';
@@ -1527,6 +1862,31 @@
         
         // Initialize on load
         window.addEventListener('load', initAnimations);
+        
+        // Video Modal Functionality
+        const videoModal = document.getElementById('videoModal');
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoModalTitle = document.getElementById('videoModalTitle');
+        
+        videoModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const videoId = button.getAttribute('data-video-id');
+            const videoTitle = button.getAttribute('data-video-title');
+            
+            videoPlayer.src = videoId;
+            videoModalTitle.textContent = videoTitle;
+        });
+        
+        videoModal.addEventListener('hidden.bs.modal', function () {
+            videoPlayer.src = '';
+        });
+        
+        // Videos Gallery Modal
+        const videosModal = document.getElementById('videosModal');
+        
+        videosModal.addEventListener('show.bs.modal', function () {
+            // Add any initialization for the videos gallery if needed
+        });
     </script>
 </body>
 </html>
