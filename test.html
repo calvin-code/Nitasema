@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Nitasema Foundation's impactful work through our gallery. Witness our education, healthcare, and community initiatives transforming children's lives in Kenya.">
-    <meta name="keywords" content="Nitasema Foundation, Kenya charity, children education, healthcare initiatives, community outreach, NGO impact">
+    <meta name="description" content="Explore Nitasema Foundation's impactful work through our gallery. Witness our education, healthcare, women empowerment, and community initiatives transforming lives in Kenya.">
+    <meta name="keywords" content="Nitasema Foundation, Kenya charity, children education, healthcare initiatives, women empowerment, GBV activism, community outreach, NGO impact">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Nitasema Foundation">
     <link rel="canonical" href="https://nitasemafoundation.org/gallery.html">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Gallery | Nitasema Foundation">
-    <meta property="og:description" content="View our impactful work empowering children in Kenya through education, healthcare, and community initiatives">
+    <meta property="og:title" content="Gallery | Nitasema Foundation - Empowering Children & Women in Kenya">
+    <meta property="og:description" content="View our impactful work empowering children and women in Kenya through education, healthcare, and community initiatives">
     <meta property="og:image" content="https://nitasemafoundation.org/logo.png">
     <meta property="og:url" content="https://nitasemafoundation.org/gallery.html">
     <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gallery | Nitasema Foundation">
-    <meta name="twitter:description" content="Visual journey of our work empowering Kenyan children through education and healthcare">
+    <meta name="twitter:description" content="Visual journey of our work empowering Kenyan children and women through education, healthcare, and empowerment initiatives">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -45,9 +45,9 @@
         "postalCode": "90136",
         "addressCountry": "KE"
       },
-      "description": "Empowering children in Kenya through education, healthcare, and emotional support",
+      "description": "Empowering children and women in Kenya through education, healthcare, and emotional support",
       "foundingDate": "2010",
-      "keywords": "Kenya, children, education, healthcare, charity, NGO, Nitasema, Foundation, Makueni, Machinery, Kibwezi, Organization",
+      "keywords": "Kenya, children, education, healthcare, charity, NGO, women empowerment, GBV activism",
       "image": "logo.png",
       "sameAs": [
         "https://www.facebook.com/NitasemaFoundation",
@@ -57,7 +57,7 @@
     }
     </script>
     
-    <title>Gallery | Nitasema Foundation - Empowering Children in Kenya</title>
+    <title>Gallery | Nitasema Foundation - Empowering Children & Women in Kenya</title>
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -84,6 +84,8 @@
             --blue: #3498db;
             --pink: #e91e63;
             --purple: #9b59b6;
+            --orange: #e67e22;
+            --teal: #1abc9c;
             --white: #ffffff;
             --light-bg: #f9f9f9;
             --dark-text: #333333;
@@ -250,7 +252,7 @@
             position: relative;
             overflow: hidden;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('logo.png') center/cover no-repeat;
+                        url('assets/women/women-hero.jpg') center/cover no-repeat;
             margin-top: 70px;
         }
 
@@ -993,56 +995,49 @@
             border: none;
         }
         
-        .video-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 15px;
-            padding: 20px;
-            background: rgba(0,0,0,0.7);
-            max-height: 300px;
-            overflow-y: auto;
+        /* Women Empowerment & GBV Section */
+        .women-section {
+            background: linear-gradient(rgba(231, 76, 60, 0.05), rgba(155, 89, 182, 0.05));
         }
         
-        .video-list-item {
-            cursor: pointer;
-            transition: var(--transition);
-            border-radius: 8px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .video-list-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .video-list-thumb {
-            width: 100%;
-            height: 100px;
-            object-fit: cover;
-            opacity: 0.8;
-            transition: var(--transition);
-        }
-        
-        .video-list-item:hover .video-list-thumb {
-            opacity: 1;
-        }
-        
-        .video-list-title {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0,0,0,0.7);
+        .impact-stat {
+            background: linear-gradient(135deg, var(--pink), var(--purple));
             color: white;
-            padding: 8px;
-            font-size: 0.8rem;
-            margin: 0;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .impact-stat h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .impact-stat p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Category tag */
+        .category-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(233, 30, 99, 0.9);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            z-index: 2;
         }
     </style>
 </head>
 <body>
-
-   
+    <!-- Accessibility: Skip to Content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
@@ -1109,7 +1104,7 @@
     <section class="gallery-hero" id="main-content">
         <div class="gallery-hero-content">
             <h1>Our Impact Gallery</h1>
-            <p>Witness the transformative journey of children in Kenya through our initiatives</p>
+            <p>Witness the transformative journey of children and women in Kenya through our initiatives</p>
         </div>
     </section>
 
@@ -1123,12 +1118,15 @@
             
             <div class="image-grid">
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#educationModal">
+                    <span class="category-tag">Education</span>
                     <img src="assets/education/education1.jpg" alt="Students at Nitasema Foundation learning center" class="grid-img">
                 </div>
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#educationModal">
+                    <span class="category-tag">Education</span>
                     <img src="assets/education/education2.jpg" alt="Classroom activities with volunteer teachers" class="grid-img">
                 </div>
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#educationModal">
+                    <span class="category-tag">Education</span>
                     <img src="assets/education/education3.jpg" alt="Children receiving educational materials and books" class="grid-img">
                 </div>
             </div>
@@ -1137,22 +1135,74 @@
         </div>
     </section>
 
+    <!-- Women Empowerment & GBV Section -->
+    <section class="category-section women-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Women Empowerment & GBV Activism</h2>
+                <p>Supporting women through skills development, economic opportunities, and GBV prevention</p>
+            </div>
+            
+            <!-- Impact Statistics -->
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="impact-stat">
+                        <h3>1,200+</h3>
+                        <p>Women Empowered</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-stat">
+                        <h3>85%</h3>
+                        <p>Increased Economic Independence</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-stat">
+                        <h3>42</h3>
+                        <p>GBV Awareness Workshops</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="image-grid">
+                <div class="grid-item" data-bs-toggle="modal" data-bs-target="#womenModal">
+                    <span class="category-tag">Empowerment</span>
+                    <img src="assets/women/women1.jpg" alt="Women's entrepreneurship training session" class="grid-img">
+                </div>
+                <div class="grid-item" data-bs-toggle="modal" data-bs-target="#womenModal">
+                    <span class="category-tag">GBV Activism</span>
+                    <img src="assets/women/gbv1.jpg" alt="Community GBV awareness workshop" class="grid-img">
+                </div>
+                <div class="grid-item" data-bs-toggle="modal" data-bs-target="#womenModal">
+                    <span class="category-tag">Empowerment</span>
+                    <img src="assets/women/women2.jpg" alt="Women's leadership conference" class="grid-img">
+                </div>
+            </div>
+            
+            <button class="view-more-btn" data-bs-toggle="modal" data-bs-target="#womenModal">View More</button>
+        </div>
+    </section>
+
     <!-- Healthcare Section -->
     <section class="category-section" style="background: var(--light-bg);">
         <div class="container">
             <div class="section-title">
-                <h2>Women Initiatives</h2>
-                <p>Bringing women together and waging war againist GBV</p>
+                <h2>Healthcare Initiatives</h2>
+                <p>Bringing essential medical services to children in need</p>
             </div>
             
             <div class="image-grid">
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#healthcareModal">
+                    <span class="category-tag">Healthcare</span>
                     <img src="assets/healthcare/healthcare1.jpg" alt="Mobile medical clinic in rural Kenya" class="grid-img">
                 </div>
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#healthcareModal">
+                    <span class="category-tag">Healthcare</span>
                     <img src="assets/healthcare/healthcare2.jpg" alt="Vaccination program for children" class="grid-img">
                 </div>
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#healthcareModal">
+                    <span class="category-tag">Healthcare</span>
                     <img src="assets/healthcare/healthcare3.jpg" alt="Health education session with parents" class="grid-img">
                 </div>
             </div>
@@ -1171,12 +1221,15 @@
             
             <div class="image-grid">
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#communityModal">
+                    <span class="category-tag">Community</span>
                     <img src="assets/community/community1.jpg" alt="Community meeting discussing development projects" class="grid-img">
                 </div>
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#communityModal">
+                    <span class="category-tag">Community</span>
                     <img src="assets/community/community2.jpg" alt="Water well installation project" class="grid-img">
                 </div>
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#communityModal">
+                    <span class="category-tag">Community</span>
                     <img src="assets/community/community3.jpg" alt="Women empowerment training session" class="grid-img">
                 </div>
             </div>
@@ -1195,12 +1248,15 @@
             
             <div class="image-grid">
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#eventsModal">
+                    <span class="category-tag">Events</span>
                     <img src="assets/events/events1.jpg" alt="Annual fundraising gala event" class="grid-img">
                 </div>
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#eventsModal">
+                    <span class="category-tag">Events</span>
                     <img src="assets/events/events2.jpg" alt="Volunteer appreciation day" class="grid-img">
                 </div>
                 <div class="grid-item" data-bs-toggle="modal" data-bs-target="#eventsModal">
+                    <span class="category-tag">Events</span>
                     <img src="assets/events/events3.jpg" alt="Community cultural festival" class="grid-img">
                 </div>
             </div>
@@ -1227,7 +1283,6 @@
                         </div>
                         <h3 class="video-title">Education Transformation in Makueni</h3>
                     </div>
-                    <!-- <div class="video-duration">4:32</div> -->
                 </div>
                 
                 <!-- Video 2 -->
@@ -1251,11 +1306,8 @@
                         </div>
                         <h3 class="video-title">Community Development Success Stories</h3>
                     </div>
-                    
                 </div>
             </div>
-            
-            <!-- <button class="view-more-btn" data-bs-toggle="modal" data-bs-target="#videosModal">View All Videos</button> -->
         </div>
     </section>
 
@@ -1344,6 +1396,100 @@
                         </div>
                         <div class="modal-item">
                             <img src="assets/education/education24.jpg" class="modal-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Women Empowerment Modal -->
+    <div class="modal fade gallery-modal" id="womenModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Women Empowerment & GBV Activism Gallery</h5>
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-grid">
+                        <!-- Women Empowerment Images (1-24) -->
+                        <div class="modal-item">
+                            <img src="assets/women/women1.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women2.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women3.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women4.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women5.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women6.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women7.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women8.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women9.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women10.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women11.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women12.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women13.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women14.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women15.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women16.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women17.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women18.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women19.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women20.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women21.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women22.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women23.jpg" class="modal-img">
+                        </div>
+                        <div class="modal-item">
+                            <img src="assets/women/women24.jpg" class="modal-img">
                         </div>
                     </div>
                 </div>
@@ -1654,74 +1800,6 @@
             </div>
         </div>
     </div>
-    
-    <!-- Videos Gallery Modal -->
-   <!-- <div class="modal fade video-modal" id="videosModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Our Impact Videos</h5>
-                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body p-0">
-                    <div class="video-list">
-                        <!-- Video 1 -
-                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Education Transformation in Makueni">
-                            <img src="https://images.unsplash.com/photo-1524178239882-9c75c8a0f083?q=80&w=1000" alt="Education Transformation in Makueni" class="video-list-thumb">
-                            <h6 class="video-list-title">Education Transformation in Makueni</h6>
-                        </div>
-                        
-                        <!-- Video 2 -
-                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Healthcare Outreach in Kibwezi">
-                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000" alt="Healthcare Outreach in Kibwezi" class="video-list-thumb">
-                            <h6 class="video-list-title">Healthcare Outreach in Kibwezi</h6>
-                        </div>
-                        
-                        <!-- Video 3 -
-                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Community Development Success Stories">
-                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1000" alt="Community Development Success Stories" class="video-list-thumb">
-                            <h6 class="video-list-title">Community Development Success Stories</h6>
-                        </div>
-                        
-                        <!-- Video 4 -
-                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Student Scholarship Program 2024">
-                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1000" alt="Student Scholarship Program 2024" class="video-list-thumb">
-                            <h6 class="video-list-title">Student Scholarship Program 2024</h6>
-                        </div>
-                        
-                        <!-- Video 5 -
-                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Clean Water Project Launch">
-                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000" alt="Clean Water Project Launch" class="video-list-thumb">
-                            <h6 class="video-list-title">Clean Water Project Launch</h6>
-                        </div>
-                        
-                        <!-- Video 6 -
-                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Annual Charity Gala Highlights">
-                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000" alt="Annual Charity Gala Highlights" class="video-list-thumb">
-                            <h6 class="video-list-title">Annual Charity Gala Highlights</h6>
-                        </div>
-                        
-                        <!-- Video 7 -
-                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Volunteer Stories: Making a Difference">
-                            <img src="https://images.unsplash.com/photo-1522071901873-411886a10004?q=80&w=1000" alt="Volunteer Stories: Making a Difference" class="video-list-thumb">
-                            <h6 class="video-list-title">Volunteer Stories: Making a Difference</h6>
-                        </div>
-                        
-                        <!-- Video 8 -
-                        <div class="video-list-item" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="https://www.youtube.com/embed/dQw4w9WgXcQ" data-video-title="Nutrition Program for Children">
-                            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1000" alt="Nutrition Program for Children" class="video-list-thumb">
-                            <h6 class="video-list-title">Nutrition Program for Children</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Footer -->
     <footer class="footer" id="contact">
@@ -1879,13 +1957,6 @@
         
         videoModal.addEventListener('hidden.bs.modal', function () {
             videoPlayer.src = '';
-        });
-        
-        // Videos Gallery Modal
-        const videosModal = document.getElementById('videosModal');
-        
-        videosModal.addEventListener('show.bs.modal', function () {
-            // Add any initialization for the videos gallery if needed
         });
     </script>
 </body>
